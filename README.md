@@ -7,7 +7,7 @@ This script extracts annual values from [EMEP MSC-W model](https://acp.copernicu
 
  - Download all files from this repository (e.g. via Code -> Download ZIP above) and unzip.
 
- - Download at least one .nc file with annual data from the EMEP website (see above) and place it in the "Input" folder. Do not change names of files. I.e. files must be named like "EMEP01_rv4.42_year.2018met_2018emis_rep2021.nc". The part "year.XXXX" is used to extract the year from the file name.
+ - Download at least one .nc file with annual data from the EMEP website (see above) and place it in the "Input" folder. Do not change names of files. File names must have the extension ".nc" and the part "year.XXXX" in the file names is used to extract the year from the file name.
 
  - Script 01_Convert_NetCDF_to_CSV_gridded.R:
 
@@ -31,7 +31,3 @@ This script extracts annual values from [EMEP MSC-W model](https://acp.copernicu
 NetCDF files can also be inspected using a web view (adjust URL to switch years): https://thredds.met.no/thredds/godiva2/godiva2.html?server=https://thredds.met.no/thredds/wms/data/EMEP/2020_Reporting/EMEP01_rv4_35_year.2019met_2018emis.nc
 
 The EMEP 0.1 x 0.1 degree grid is a standard WGS84 grid according to the "EMEP_gridding_system_documentation" found [here]( https://webdab01.umweltbundesamt.at/download/EMEP_gridding_system_documentation.pdf) and is linked to on [this website](https://emep.int/mscw/mscw_moddata.html). In this document it says: "At the 36th session of the EMEP Steering Body the EMEP Centers suggested to increase spatial resolution of reported emissions from 50x 50 km EMEP grid to 0.1° × 0.1° long-lat in a geographic coordinate system (WGS84) to improve quality of monitoring."
-
-
-
-Please report any bugs / unexpected behaviour.
